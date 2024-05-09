@@ -1,0 +1,219 @@
+@charset "utf-8";
+
+
+.header {
+    position: relative;
+    background-color: #F07900;
+    height: 94px;
+    width: 100%;
+}
+.wrap_header{
+    display: flex;
+    align-items: center;
+}
+
+.logo,
+.menu ul li,
+.button button,
+.search_bar input,
+.language ul li, 
+.menu ul .button, 
+.language ul .icon{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    float: left;
+}
+ 
+.header .wrap_header .logo {
+    margin-left: 50px; 
+}
+.header .wrap_header .search_bar input {
+  width: 409px; 
+  header: 46px; 
+  border-radius: 20px; 
+}
+.header .wrap_header .menu{
+    padding-left: 150px; 
+}
+.header .wrap_header .menu ul li a{
+    text-decoration: none; 
+    color: #fff; 
+    font-size: 22px; 
+    font-weight: bold; 
+    padding-top: 7px; 
+
+}
+.header .wrap_header .menu ul li, .header .wrap_header .menu ul .button{
+    padding-left: 25px; 
+}
+.header .wrap_header .menu ul .button{
+    max-width: 179px; 
+    height: 41px; 
+    background-color: #fff; 
+    padding-right: 20px; 
+    margin-left: 20px; 
+    
+
+}
+.header .wrap_header .menu ul .button a{
+    text-decoration: none; 
+    font-size: 22px; 
+    color: #F07900; 
+    font-weight: bold; 
+    margin: 0 auto; 
+
+}
+.header .wrap_header .language{
+    font-size: 18px; 
+    color: #fff; 
+
+}
+.header .wrap_header .language .icon{
+    margin-top: 7px;
+    margin-left: 5px; 
+}
+.container {
+    width: 80%px;
+    margin-top: 50px;
+    overflow-x: hidden;
+}
+
+.container-fluid {
+    height: 60px;
+    background: rgb(239, 120, 1);
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.banner {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-list {
+    display: none;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline;
+    margin-right: 20px;
+    font-weight: 550;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.video,
+h5,
+.desc {
+    margin-left: 12.5px;
+}
+
+.ingredient {
+    margin-left: -15px;
+}
+
+.content {
+    width: 100%;
+    float: left;
+    margin: 0px auto;
+}
+
+.list-group-item .ingredient-quantity {
+    width: 45%;
+    float: right;
+    text-align: right;
+
+}
+
+.list-group-item .ingredient-name {
+    width: 50%;
+    float: left;
+    text-align: left;
+}
+
+.list-group-flush {
+    margin-left: 0px;
+}
+
+.number {
+    float: left;
+    width: 25px;
+    font-size: 14px;
+    margin-left: 12.5px;
+}
+
+.step-content {
+    float: left;
+    font-size: 14px;
+    width: 92%;
+    margin: 0;
+}
+
+.step-photo {
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    white-space: nowrap;
+    float: none;
+}
+
+.cook-step-item {
+    width: 100%;
+    float: left;
+    padding-bottom: 16px;
+}
+
+.step-photo>li {
+    display: inline-block;
+}
+
+.step-photo>li img {
+    width: 70px;
+    height: 70px;
+    border-radius: 2px;
+    margin-right: 2px;
+    object-fit: cover;
+}
+
+.item-instructions img {
+    width: 270px;
+    padding: 15px 0 0;
+}
+
+.footer {
+    margin-top: 15px;
+    background: #333;
+    padding: 20px 0;
+    color: #fff;
+}
+
+.footer p{
+    margin: 0px auto;
+}
+
+@media only screen and (max-width: 576px) {
+
+    .col-sm-8,
+    .col-sm-4 {
+        flex: 0 0 100%;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 595px) {
+    .menu-icon {
+        display: none;
+    }
+
+    .nav-list {
+        display: block;
+    }
+}
