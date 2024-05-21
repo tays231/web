@@ -74,7 +74,7 @@
     margin-left: 5px; 
 }
 .container {
-    width: 80%px;
+
     margin-top: 50px;
     overflow-x: hidden;
 }
@@ -217,3 +217,24 @@ h5,
         display: block;
     }
 }
+
+h6{
+    text-align: center;
+    color: #F07900;
+}
+
+.home{
+    display: flex;
+    justify-content: space-between; /* Chia đều không gian giữa các div con */
+    align-items: center;
+    padding: 0 10px;
+}
+
+.trai, .phai{
+    text-align: center;
+}
+
+.con-f{
+    margin-left: 60px   ;
+}
+
