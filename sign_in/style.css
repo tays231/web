@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
+
 * {
   padding: 0;
   margin: 0;
@@ -321,4 +322,75 @@ form.sign-up-form {
     bottom: 28%;
     left: 50%;
   }
+}
+
+
+/* Placeholder style */
+.navbar .form-control::placeholder {
+  color: rgb(206, 206, 206) !important;
+  opacity: 1; /* Đảm bảo màu placeholder hiển thị rõ ràng */
+}
+.search-container .form-control {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 20px; /* Độ bo tròn của ô tìm kiếm */
+  border: 2px solid white; /* Màu đường viền */
+  height: 38px; /* Chiều cao của ô tìm kiếm */
+  color: rgb(11, 7, 7) !important;
+  background-color: #eee; /* Để input trong suốt */
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #F07900;
+}
+
+.navbar-brand img {
+  width: 100px; /* Đặt kích thước chiều rộng mong muốn */
+  height: auto; /* Đảm bảo tỷ lệ khung hình không bị thay đổi */
+}
+
+.nav-link {
+  color: white !important;
+  font-size: 1.1em; /* Tăng kích thước font chữ */
+}
+
+.nav-link:hover {
+  text-decoration: underline; /* Gạch chân khi hover */
+}
+
+.navbar-nav .nav-link,
+.navbar-brand,
+.navbar .btn {
+  color: white !important;
+  font-size: 18px; /* Điều chỉnh kích thước phông chữ */
+}
+
+/* Dropdown menu styles */
+.navbar .dropdown-menu {
+  background-color: #ffffff; /* Màu nền của dropdown */
+  border-color: #fefefe; /* Màu đường viền của dropdown */
+}
+
+.navbar .dropdown-menu .dropdown-item {
+  color: black !important;
+  font-size: 18px; /* Kích thước phông chữ cho các mục dropdown */
+}
+
+.navbar .dropdown-menu .dropdown-item:hover {
+  color: white !important; /* Màu khi hover vào mục dropdown */
+  background-color: black !important; /* Màu nền khi hover */
+}
+
+/* Button styles */
+.navbar .btn-outline-success {
+  color: white !important;
+  border-color: white !important;
+  background: transparent;
+}
+
+.navbar .btn-outline-success:hover {
+  color: rgb(242, 87, 87) !important;
+  background-color: white !important;
+  border-color: white !important;
 }
