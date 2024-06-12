@@ -283,6 +283,7 @@ h2 {
   );
   padding: 1em;
   border-radius: 30px;
+  text-decoration: none;
 }
 
 .cat-card:nth-of-type(2) {
@@ -338,6 +339,7 @@ h2 {
 .cat:hover,
 .instagram-cards a:hover {
   transform: scale(0.95);
+  text-decoration: none;
 }
 
 
