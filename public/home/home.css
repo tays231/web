@@ -100,7 +100,7 @@ nav ul li {
 .hero {
   width: 100%;
   height: quto;
-  background: url(/assets/images/heo-image.jpg);
+  background: url(/public/assets/images/heo-image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -410,4 +410,14 @@ h2 {
   color: rgb(242, 87, 87) !important;
   background-color: white !important;
   border-color: white !important;
+}
+
+#fixed-menu{
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+}
+.row{
+  margin-left: 0 !important; 
+  
 }
