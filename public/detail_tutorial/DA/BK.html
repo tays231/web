@@ -1,272 +1,361 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bò kho</title>
-    <link rel="stylesheet" href="../css/bootstrap.css">
-    <link rel="stylesheet" href="detail.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="detail.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="/public/assets/images/logo.png"
+      type="image/x-icon"
+      sizes="48x48"
+    />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">
-            <img src="/assets/images/logo.png" alt="">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+      <a class="navbar-brand" href="#">
+        <img src="/assets/images/logo.png" alt="" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="/home/home.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Menu
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Bữa sáng</a>
-                        <a class="dropdown-item" href="#">Bữa trưa</a>
-                        <a class="dropdown-item" href="#">Ăn nhẹ</a>
-                        <a class="dropdown-item" href="#">Món Rau</a>
-                        <a class="dropdown-item" href="#">Món gà</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/parallax_scroll/introduc.html">Giới thiệu</a>
-                </li>
-            </ul>
-            <form class="form-inline search-container mx-lg-auto ml-lg-n5 my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            </form>
-            <a href="/sign_in/sign.html" class="btn btn-primary" data-mdb-ripple-init>Đăng nhập</a>
-
-        </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/home/home.html"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Menu
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Bữa sáng</a>
+              <a class="dropdown-item" href="#">Bữa trưa</a>
+              <a class="dropdown-item" href="#">Ăn nhẹ</a>
+              <a class="dropdown-item" href="#">Món Rau</a>
+              <a class="dropdown-item" href="#">Món gà</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/parallax_scroll/introduc.html"
+              >Giới thiệu</a
+            >
+          </li>
+        </ul>
+        <form
+          class="form-inline search-container mx-lg-auto ml-lg-n5 my-2 my-lg-0"
+        >
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+        </form>
+        <a
+          href="/sign_in/sign.html"
+          class="btn btn-primary"
+          data-mdb-ripple-init
+          >Đăng nhập</a
+        >
+      </div>
     </nav>
     <div class="container">
-        <div class="row">
-            <div class="col-sm-8">
-                <div class="video">
-                    <iframe width="100%" height="470"
-                        src="https://www.youtube.com/embed/RqlVykRE11o?si=dl_djFXULr0YfKB7" title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div class="row">
+        <div class="col-sm-8">
+          <div class="video">
+            <iframe
+              width="100%"
+              height="470"
+              src="https://www.youtube.com/embed/RqlVykRE11o?si=dl_djFXULr0YfKB7"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="content">
+            <h5>Bò kho</h5>
+            <div class="desc">
+              Bò kho là một món ăn truyền thống và phổ biến trong ẩm thực Việt
+              Nam, được biết đến với hương vị đậm đà và thịt bò mềm mại. Đây là
+              món ăn thường xuất hiện trong các bữa ăn gia đình, tiệc tùng và
+              các dịp lễ đặc biệt. Bò kho có thể được ăn kèm với bánh mì, cơm
+              trắng, hoặc bún, tạo nên sự phong phú và hấp dẫn cho bữa ăn.
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <div class="ingredient">
+                  <h5>Thành phần</h5>
                 </div>
-                <div class="content">
-                    <h5>Bò kho</h5>
-                    <div class="desc">Bò kho là một món ăn truyền thống và phổ biến trong ẩm thực Việt Nam, được biết
-                        đến với hương vị đậm đà và thịt bò mềm mại. Đây là món ăn thường xuất hiện trong các bữa ăn gia
-                        đình, tiệc tùng và các dịp lễ đặc biệt. Bò kho có thể được ăn kèm với bánh mì, cơm trắng, hoặc
-                        bún, tạo nên sự phong phú và hấp dẫn cho bữa ăn.
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <div class="ingredient">
-                                <h5>Thành phần</h5>
-                            </div>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="ingredient-name">Nạm bò</span>
-                            <span class="ingredient-quantity">1 kg</span>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="ingredient-name">Cà rốt, hành tây</span>
-                            <span class="ingredient-quantity">300 gram</span>
-                        </li>
+              </li>
+              <li class="list-group-item">
+                <span class="ingredient-name">Nạm bò</span>
+                <span class="ingredient-quantity">1 kg</span>
+              </li>
+              <li class="list-group-item">
+                <span class="ingredient-name">Cà rốt, hành tây</span>
+                <span class="ingredient-quantity">300 gram</span>
+              </li>
 
-                        <li class="list-group-item">
-                            <span class="ingredient-name">Sả cây</span>
-                            <span class="ingredient-quantity">100 gram</span>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="ingredient-name">Dầu màu điều</span>
-                            <span class="ingredient-quantity">3 muỗng</span>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="ingredient-name">hành tím, tỏi, củ riềng</span>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="ingredient-name">Bánh mỳ</span>
-                            <span class="ingredient-quantity">5 ổ</span>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="ingredient-name">Gia vị quen thuộc</span>
-                        </li>
+              <li class="list-group-item">
+                <span class="ingredient-name">Sả cây</span>
+                <span class="ingredient-quantity">100 gram</span>
+              </li>
+              <li class="list-group-item">
+                <span class="ingredient-name">Dầu màu điều</span>
+                <span class="ingredient-quantity">3 muỗng</span>
+              </li>
+              <li class="list-group-item">
+                <span class="ingredient-name">hành tím, tỏi, củ riềng</span>
+              </li>
+              <li class="list-group-item">
+                <span class="ingredient-name">Bánh mỳ</span>
+                <span class="ingredient-quantity">5 ổ</span>
+              </li>
+              <li class="list-group-item">
+                <span class="ingredient-name">Gia vị quen thuộc</span>
+              </li>
+            </ul>
+            <div class="steps-list">
+              <h5>Hướng dẫn thực hiện</h5>
+              <div class="cook-step-content">
+                <div class="cook-step-item">
+                  <div class="number">1.</div>
+                  <div class="step-content">
+                    <p>
+                      Thịt bò rửa sạch, sau đó mang chần qua nước sôi, cắt thành
+                      từng miếng vuông nhỏ có trọng lượng khoảng 40g.
+                      <br />
+                      Cà rốt, bào bỏ vỏ, rửa sạch, cắt miếng vừa ăn, luộc chín
+                      sơ qua. Riềng rửa sạch, đập đập. Sả rửa sạch, cắt khúc,
+                      đập dập. Hành tím, tỏi bỏ vỏ, băm nhuyễn. Hành tây bỏ vỏ,
+                      cắt múi cau nhỏ. Rau ăn kèm rửa sạch.
+                    </p>
+                    <ul class="step-photo">
+                      <li><img src="../../assets/images/BK/1.webp" /></li>
                     </ul>
-                    <div class="steps-list">
-                        <h5>Hướng dẫn thực hiện</h5>
-                        <div class="cook-step-content">
-                            <div class="cook-step-item">
-                                <div class="number">1. </div>
-                                <div class="step-content">
-                                    <p>Thịt bò rửa sạch, sau đó mang chần qua nước sôi, cắt thành từng miếng vuông nhỏ
-                                        có trọng lượng khoảng 40g.
-                                        <br>
-                                        Cà rốt, bào bỏ vỏ, rửa sạch, cắt miếng vừa ăn, luộc chín sơ qua.
-                                        Riềng rửa sạch, đập đập. Sả rửa sạch, cắt khúc, đập dập. Hành tím, tỏi bỏ vỏ,
-                                        băm nhuyễn. Hành tây bỏ vỏ, cắt múi cau nhỏ.
-                                        Rau ăn kèm rửa sạch.
-                                    </p>
-                                    <ul class="step-photo">
-                                        <li><img src="../../assets/images/BK/1.webp">
-                                        </li>
-
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="cook-step-item">
-                                <div class="number">2. </div>
-                                <div class="step-content">
-                                    <p>Ướp thịt bò cùng 100g tương cà, 50g tương ớt, 60g tương ớt Quế Lâm, 20g dầu hào,
-                                        10g tiêu sọ trắng, 2g bột nghệ, 2g bột cà ri, 20ml dầu điều. Trộn tất cả cho
-                                        thật đều và ướp trong thời gian ít nhất 30 phút.</p>
-
-                                </div>
-                            </div>
-                            <div class="cook-step-item">
-                                <div class="number">3. </div>
-                                <div class="step-content">
-                                    <p>Cho 1 muỗng canh dầu ăn vào chảo, phi thơm 30g củ riềng, 60g sả cây cắt khúc, 20g
-                                        hành tím băm, 10g tỏi băm. Sau đó cho bò đã ướp vào đảo đều đến khi thịt bò săn
-                                        lại là được.</p>
-                                    <ul class="step-photo">
-                                        <li><img src="../../assets/images/BK/9.webp">
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="cook-step-item">
-                                <div class="number">4. </div>
-                                <div class="step-content">
-                                    <p>Bắc nồi nước lên bếp, sau đó cho vào 15g muối, 20g bột ngọt, 65g đường phèn, 30g
-                                        dầu hào. Tiếp theo, bạn cho thịt bò đã xào vào cùng với 3 nụ đinh hương, 2 bông
-                                        đại hồi, 3g quế, 3g tiêu sọ, 1 trái thảo quả, 3 lá thơm và đun trong nồi áp suất
-                                        là 18 phút tính từ lúc van xì. Nếu đun bằng bếp gas hay bếp điện bình thường thì
-                                        thời gian đun là 1,5 giờ.
-                                        Sau khi đã hầm đủ thời gian, thêm cà rốt đã luộc và hành tây vào nồi. Cuối cùng,
-                                        bạn cho 50ml bột năng đã pha loãng vào. Đun sôi hỗn hợp 5 phút thì tắt bếp.
-                                    </p>
-                                    <ul class="step-photo">
-                                        <li><img src="../../assets/images/BK/13.webp">
-                                        </li>
-                                        
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                  </div>
                 </div>
-            </div>
-            <div class="col-sm-4">
-                <h5>Các cách trang trí món ăn</h5>
-                <div class="item-instructions">
-                    <img src="../../assets/images/BK/6.1.jpg">
-                    <img src="../../assets/images/BK/6.2.jpg">
-                    <img src="../../assets/images/BK/6.3.jpg">
-                    <img src="../../assets/images/BK/6.4.jpg">
-                    <img src="../../assets/images/BK/6.5.jpg">
-                    <img src="../../assets/images/BK/6.6.jpg">
+                <div class="cook-step-item">
+                  <div class="number">2.</div>
+                  <div class="step-content">
+                    <p>
+                      Ướp thịt bò cùng 100g tương cà, 50g tương ớt, 60g tương ớt
+                      Quế Lâm, 20g dầu hào, 10g tiêu sọ trắng, 2g bột nghệ, 2g
+                      bột cà ri, 20ml dầu điều. Trộn tất cả cho thật đều và ướp
+                      trong thời gian ít nhất 30 phút.
+                    </p>
+                  </div>
                 </div>
+                <div class="cook-step-item">
+                  <div class="number">3.</div>
+                  <div class="step-content">
+                    <p>
+                      Cho 1 muỗng canh dầu ăn vào chảo, phi thơm 30g củ riềng,
+                      60g sả cây cắt khúc, 20g hành tím băm, 10g tỏi băm. Sau đó
+                      cho bò đã ướp vào đảo đều đến khi thịt bò săn lại là được.
+                    </p>
+                    <ul class="step-photo">
+                      <li><img src="../../assets/images/BK/9.webp" /></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="cook-step-item">
+                  <div class="number">4.</div>
+                  <div class="step-content">
+                    <p>
+                      Bắc nồi nước lên bếp, sau đó cho vào 15g muối, 20g bột
+                      ngọt, 65g đường phèn, 30g dầu hào. Tiếp theo, bạn cho thịt
+                      bò đã xào vào cùng với 3 nụ đinh hương, 2 bông đại hồi, 3g
+                      quế, 3g tiêu sọ, 1 trái thảo quả, 3 lá thơm và đun trong
+                      nồi áp suất là 18 phút tính từ lúc van xì. Nếu đun bằng
+                      bếp gas hay bếp điện bình thường thì thời gian đun là 1,5
+                      giờ. Sau khi đã hầm đủ thời gian, thêm cà rốt đã luộc và
+                      hành tây vào nồi. Cuối cùng, bạn cho 50ml bột năng đã pha
+                      loãng vào. Đun sôi hỗn hợp 5 phút thì tắt bếp.
+                    </p>
+                    <ul class="step-photo">
+                      <li><img src="../../assets/images/BK/13.webp" /></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+        <div class="col-sm-4">
+          <h5>Các cách trang trí món ăn</h5>
+          <div class="item-instructions">
+            <img src="../../assets/images/BK/6.1.jpg" />
+            <img src="../../assets/images/BK/6.2.jpg" />
+            <img src="../../assets/images/BK/6.3.jpg" />
+            <img src="../../assets/images/BK/6.4.jpg" />
+            <img src="../../assets/images/BK/6.5.jpg" />
+            <img src="../../assets/images/BK/6.6.jpg" />
+          </div>
+        </div>
+      </div>
     </div>
 
     <footer class="footer_area section_padding_130_0">
-        <div class="container">
-            <div class="row">
-                <!-- Single Widget-->
-                <div class="col-12 col-sm-6 col-lg-6">
-                    <div class="single-footer-widget section_padding_0_130">
-                        <!-- Footer Logo-->
+      <div class="container">
+        <div class="row">
+          <!-- Single Widget-->
+          <div class="col-12 col-sm-6 col-lg-6">
+            <div class="single-footer-widget section_padding_0_130">
+              <!-- Footer Logo-->
 
-                        <h5 class="widget-title">Cooking Tutoria</h5>
-                        <!-- Copywrite Text-->
-                        <div class="copywrite-text mb-5">
-                            <p>
-                                Cooking Tutoria được tạo nên với mong muốn có thể giúp cho người nội trợ sẽ dễ dàng hơn
-                                trong việc nấu
-                                ăn hàng ngày của mình. Từ công việc chuẩn bị các nguyên liệu, phải chọn món ăn hàng ngày
-                                hoặc lựa chọn những thiết bị dùng bếp sẽ trở nên dễ dàng hơn.
-                            </p>
-                        </div>
-                        <!-- Footer Social Area-->
-                        <div class="footer_social_area"><a href="#" data-toggle="tooltip" data-placement="top" title=""
-                                data-original-title="Facebook"><i class="fa fa-facebook"></i></a><a href="#"
-                                data-toggle="tooltip" data-placement="top" title="" data-original-title="Pinterest"><i
-                                    class="fa fa-pinterest"></i></a><a href="#" data-toggle="tooltip"
-                                data-placement="top" title="" data-original-title="Skype"><i
-                                    class="fa fa-skype"></i></a><a href="#" data-toggle="tooltip" data-placement="top"
-                                title="" data-original-title="Twitter"><i class="fa fa-twitter"></i></a></div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg">
-                    <div class="single-footer-widget section_padding_0_130">
-                        <!-- Widget Title-->
-                        <h5 class="widget-title">Tổng quan</h5>
-                        <!-- Footer Menu-->
-                        <div class="footer_menu">
-                            <ul>
-                                <li><a href="../../Home/home.html">Trang chủ</a></li>
-                                <li><a href="../../Home/home.html#category-title">Danh mục</a></li>
-                                <li><a href="../../sign_in/sign.html">Đăng nhập</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- Single Widget-->
-                <div class="col-12 col-sm-6 col-lg">
-                    <div class="single-footer-widget section_padding_0_130">
-                        <!-- Widget Title-->
-                        <h5 class="widget-title">Danh mục</h5>
-                        <!-- Footer Menu-->
-                        <div class="footer_menu">
-                            <ul>
-                                <li><a href="../../Home/home.html#Breakfast">Breakfast</a></li>
-                                <li><a href="../../Home/home.html#Vegan">Vegan</a></li>
-                                <li><a href="../../Home/home.html#Meat">Meat</a></li>
-                                <li><a href="../../Home/home.html#Dessert">Dessert</a></li>
-                                <li><a href="../../Home/home.html#Lunch">Lunch</a></li>
-                                <li><a href="../../Home/home.html#Chocolate">Chocolate</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg">
-                    <div class="single-footer-widget section_padding_0_130">
-                        <!-- Widget Title-->
-                        <h5 class="widget-title">Liên hệ</h5>
-                        <!-- Footer Menu-->
-                        <div class="footer_menu">
-                            <ul>
-                                <li><a href="mailto:duynm.23it@vku.udn.vn"class="fas fa-envelope-open-text">&#160;duynm.23it@vku.udn.vn</a></li>
-                                <li><a href="https://www.facebook.com/duy.nguyenminh.56679" class="fab fa-facebook">&#160;Nguyễn Minh Duy</a></li>
-                                <li><a href="#" class='fas fa-phone'>&#160;0123456789</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div style="text-align: center;" class="p-3">
-                    <p>&copy; Cooking Tutorial 2024 Thiết Kế web</p>
-                </div>
-
+              <h5 class="widget-title">Cooking Tutoria</h5>
+              <!-- Copywrite Text-->
+              <div class="copywrite-text mb-5">
+                <p>
+                  Cooking Tutoria được tạo nên với mong muốn có thể giúp cho
+                  người nội trợ sẽ dễ dàng hơn trong việc nấu ăn hàng ngày của
+                  mình. Từ công việc chuẩn bị các nguyên liệu, phải chọn món ăn
+                  hàng ngày hoặc lựa chọn những thiết bị dùng bếp sẽ trở nên dễ
+                  dàng hơn.
+                </p>
+              </div>
+              <!-- Footer Social Area-->
+              <div class="footer_social_area">
+                <a
+                  href="#"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title=""
+                  data-original-title="Facebook"
+                  ><i class="fa fa-facebook"></i></a
+                ><a
+                  href="#"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title=""
+                  data-original-title="Pinterest"
+                  ><i class="fa fa-pinterest"></i></a
+                ><a
+                  href="#"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title=""
+                  data-original-title="Skype"
+                  ><i class="fa fa-skype"></i></a
+                ><a
+                  href="#"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title=""
+                  data-original-title="Twitter"
+                  ><i class="fa fa-twitter"></i
+                ></a>
+              </div>
             </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg">
+            <div class="single-footer-widget section_padding_0_130">
+              <!-- Widget Title-->
+              <h5 class="widget-title">Tổng quan</h5>
+              <!-- Footer Menu-->
+              <div class="footer_menu">
+                <ul>
+                  <li><a href="../../Home/home.html">Trang chủ</a></li>
+                  <li>
+                    <a href="../../Home/home.html#category-title">Danh mục</a>
+                  </li>
+                  <li><a href="../../sign_in/sign.html">Đăng nhập</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Single Widget-->
+          <div class="col-12 col-sm-6 col-lg">
+            <div class="single-footer-widget section_padding_0_130">
+              <!-- Widget Title-->
+              <h5 class="widget-title">Danh mục</h5>
+              <!-- Footer Menu-->
+              <div class="footer_menu">
+                <ul>
+                  <li>
+                    <a href="../../Home/home.html#Breakfast">Breakfast</a>
+                  </li>
+                  <li><a href="../../Home/home.html#Vegan">Vegan</a></li>
+                  <li><a href="../../Home/home.html#Meat">Meat</a></li>
+                  <li><a href="../../Home/home.html#Dessert">Dessert</a></li>
+                  <li><a href="../../Home/home.html#Lunch">Lunch</a></li>
+                  <li>
+                    <a href="../../Home/home.html#Chocolate">Chocolate</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg">
+            <div class="single-footer-widget section_padding_0_130">
+              <!-- Widget Title-->
+              <h5 class="widget-title">Liên hệ</h5>
+              <!-- Footer Menu-->
+              <div class="footer_menu">
+                <ul>
+                  <li>
+                    <a
+                      href="mailto:duynm.23it@vku.udn.vn"
+                      class="fas fa-envelope-open-text"
+                      >&#160;duynm.23it@vku.udn.vn</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.facebook.com/duy.nguyenminh.56679"
+                      class="fab fa-facebook"
+                      >&#160;Nguyễn Minh Duy</a
+                    >
+                  </li>
+                  <li><a href="#" class="fas fa-phone">&#160;0123456789</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
-
+          <div style="text-align: center" class="p-3">
+            <p>&copy; Cooking Tutorial 2024 Thiết Kế web</p>
+          </div>
         </div>
+      </div>
     </footer>
-
-    
-</body>
-
+  </body>
 </html>

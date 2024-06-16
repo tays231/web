@@ -1,303 +1,380 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sữa chua nếp cẩm</title>
-    <link rel="stylesheet" href="../css/bootstrap.css">
-    <link rel="stylesheet" href="detail.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="detail.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="/public/assets/images/logo.png"
+      type="image/x-icon"
+      sizes="48x48"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">
-            <img src="/assets/images/logo.png" alt="">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+      <a class="navbar-brand" href="#">
+        <img src="/assets/images/logo.png" alt="" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="/home/home.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Menu
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Bữa sáng</a>
-                        <a class="dropdown-item" href="#">Bữa trưa</a>
-                        <a class="dropdown-item" href="#">Ăn nhẹ</a>
-                        <a class="dropdown-item" href="#">Món Rau</a>
-                        <a class="dropdown-item" href="#">Món gà</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/parallax_scroll/introduc.html">Giới thiệu</a>
-                </li>
-            </ul>
-            <form class="form-inline search-container mx-lg-auto ml-lg-n5 my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            </form>
-            <a href="/sign_in/sign.html" class="btn btn-primary" data-mdb-ripple-init>Đăng nhập</a>
-
-        </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/home/home.html"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Menu
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Bữa sáng</a>
+              <a class="dropdown-item" href="#">Bữa trưa</a>
+              <a class="dropdown-item" href="#">Ăn nhẹ</a>
+              <a class="dropdown-item" href="#">Món Rau</a>
+              <a class="dropdown-item" href="#">Món gà</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/parallax_scroll/introduc.html"
+              >Giới thiệu</a
+            >
+          </li>
+        </ul>
+        <form
+          class="form-inline search-container mx-lg-auto ml-lg-n5 my-2 my-lg-0"
+        >
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+        </form>
+        <a
+          href="/sign_in/sign.html"
+          class="btn btn-primary"
+          data-mdb-ripple-init
+          >Đăng nhập</a
+        >
+      </div>
     </nav>
     <div class="container">
-        <div class="row">
-            <div class="col-sm-8">
-                <div class="video">
-                    <iframe width="100%" height="470"
-                        src="https://www.youtube.com/embed/o_W_kIJkuoM?si=wsP5xmrXD2D89B0U" title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div class="row">
+        <div class="col-sm-8">
+          <div class="video">
+            <iframe
+              width="100%"
+              height="470"
+              src="https://www.youtube.com/embed/o_W_kIJkuoM?si=wsP5xmrXD2D89B0U"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="content">
+            <h5>Sữa chua nếp cẩm</h5>
+            <div class="desc">
+              Sữa chua nếp cẩm là món tráng miệng được đông đảo mọi người ở
+              nhiều lứa tuổi yêu thích vì hương vị thơm ngon, thanh mát dễ ăn,
+              lại chứa nhiều dinh dưỡng.
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <div class="ingredient">
+                  <h5>Thành phần</h5>
                 </div>
-                <div class="content">
-                    <h5>Sữa chua nếp cẩm</h5>
-                    <div class="desc">Sữa chua nếp cẩm là món tráng miệng được đông đảo mọi người ở nhiều lứa tuổi yêu
-                        thích vì hương vị thơm ngon, thanh mát dễ ăn, lại chứa nhiều dinh dưỡng.
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <div class="ingredient">
-                                <h5>Thành phần</h5>
-                            </div>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="ingredient-name">Sữa tươi không đường</span>
-                            <span class="ingredient-quantity">1 lít</span>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="ingredient-name">Nếp cẩm</span>
-                            <span class="ingredient-quantity">200 gram</span>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="ingredient-name">Sữa đặc</span>
-                            <span class="ingredient-quantity">1/2 hộp</span>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="ingredient-name">Sữa chua</span>
-                            <span class="ingredient-quantity">1 hộp</span>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="ingredient-name">Lá dứa</span>
-                            <span class="ingredient-quantity">1 bó</span>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="ingredient-name">Đường nâu</span>
-                            <span class="ingredient-quantity">100 gram</span>
-                        </li>
+              </li>
+              <li class="list-group-item">
+                <span class="ingredient-name">Sữa tươi không đường</span>
+                <span class="ingredient-quantity">1 lít</span>
+              </li>
+              <li class="list-group-item">
+                <span class="ingredient-name">Nếp cẩm</span>
+                <span class="ingredient-quantity">200 gram</span>
+              </li>
+              <li class="list-group-item">
+                <span class="ingredient-name">Sữa đặc</span>
+                <span class="ingredient-quantity">1/2 hộp</span>
+              </li>
+              <li class="list-group-item">
+                <span class="ingredient-name">Sữa chua</span>
+                <span class="ingredient-quantity">1 hộp</span>
+              </li>
+              <li class="list-group-item">
+                <span class="ingredient-name">Lá dứa</span>
+                <span class="ingredient-quantity">1 bó</span>
+              </li>
+              <li class="list-group-item">
+                <span class="ingredient-name">Đường nâu</span>
+                <span class="ingredient-quantity">100 gram</span>
+              </li>
+            </ul>
+            <div class="steps-list">
+              <h5>Hướng dẫn thực hiện</h5>
+              <div class="cook-step-content">
+                <div class="cook-step-item">
+                  <div class="number">1.</div>
+                  <div class="step-content">
+                    <p>
+                      Bắc nồi lên bếp, cho 1 lít sữa tươi không đường và 1/2 hộp
+                      sữa đặc (190gr) vào nồi rồi nấu ở lửa nhỏ cho tới khi sữa
+                      sôi lăn tăn thì tắt bếp.
+                      <br />
+                      Sau đó, cho sữa vừa nấu ra tô sạch và để nguội bớt. Khi
+                      hỗn hợp còn ấm khoảng 50 - 70 độ C, bạn cho 1 hộp sữa chua
+                      (100gr) vào, khuấy đều.
+                    </p>
+                    <ul class="step-photo">
+                      <li><img src="../../assets/images/SCNC/1.jpg" /></li>
+                      <li><img src="../../assets/images/SCNC/2.jpg" /></li>
+                      <li><img src="../../assets/images/SCNC/3.jpg" /></li>
+                      <li><img src="../../assets/images/SCNC/4.jpg" /></li>
                     </ul>
-                    <div class="steps-list">
-                        <h5>Hướng dẫn thực hiện</h5>
-                        <div class="cook-step-content">
-                            <div class="cook-step-item">
-                                <div class="number">1. </div>
-                                <div class="step-content">
-                                    <p>Bắc nồi lên bếp, cho 1 lít sữa tươi không đường và 1/2 hộp sữa đặc (190gr) vào
-                                        nồi rồi nấu ở lửa nhỏ cho tới khi sữa sôi lăn tăn thì tắt bếp.
-                                        <br>
-                                        Sau đó, cho sữa vừa nấu ra tô sạch và để nguội bớt. Khi hỗn hợp còn ấm khoảng 50
-                                        - 70 độ C, bạn cho 1 hộp sữa chua (100gr) vào, khuấy đều.
-                                    </p>
-                                    <ul class="step-photo">
-                                        <li><img src="../../assets/images/SCNC/1.jpg">
-                                        </li>
-                                        <li><img src="../../assets/images/SCNC/2.jpg">
-                                        </li>
-                                        <li><img src="../../assets/images/SCNC/3.jpg">
-                                        </li>
-                                        <li><img src="../../assets/images/SCNC/4.jpg">
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="cook-step-item">
-                                <div class="number">2. </div>
-                                <div class="step-content">
-                                    <p>Cho hỗn hợp sữa chua đã làm phía trên vào từng hũ nhỏ, sau đó cho các hũ vào nồi
-                                        cơm điện. Tiếp đến, đổ nước ấm khoảng 80 độ C ngập 2/3 hũ sữa chua, sau đó đậy
-                                        nắp nồi cơm điện lại, bật chế độ hâm nóng trong vòng 15 - 20 phút rồi rút dây
-                                        điện ra.
-                                        <br>
-                                        Sau khoảng 2 tiếng hoặc tới khi nước trong nồi nguội thì cắm dây điện lại, vẫn
-                                        để chế độ hâm nóng trong 15 phút. Lặp lại quá trình này tới khi sữa chua được ủ
-                                        xong (khoảng 6 - 8 tiếng).
-                                    </p>
-                                    <ul class="step-photo">
-                                        <li><img src="../../assets/images/SCNC/5.jpg">
-                                        </li>
-                                        <li><img src="../../assets/images/SCNC/6.jpg">
-                                        </li>
-                                        <li><img src="../../assets/images/SCNC/7.jpg">
-                                        </li>
-                                        <li><img src="../../assets/images/SCNC/8.jpg">
-                                        </li>
-
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="cook-step-item">
-                                <div class="number">3. </div>
-                                <div class="step-content">
-                                    <p>Nếp cẩm vo sạch, sau đó ngâm với 500ml nước ấm trong vòng 4 - 6 tiếng rồi chắt
-                                        nước ra. Sau đó, cho nếp vào nồi nấu cùng 600ml nước lọc. Nấu ở lửa vừa cho tới
-                                        khi nước sôi thì cho lá dứa vào nấu cùng.
-                                        <br>
-                                        Tiếp tục nấu cho đến khi nước gần cạn thì vớt lá dứa ra, cho 100ml nước cốt dừa
-                                        và 100gr đường nâu vào, khuấy đều. Nấu thêm 15 phút nữa, ăn thử xem nếp cẩm đã
-                                        chín mềm chưa rồi tắt bếp.
-                                    </p>
-                                    <ul class="step-photo">
-                                        <li><img src="../../assets/images/SCNC/9.jpg">
-                                        </li>
-                                        <li><img src="../../assets/images/SCNC/10.jpg">
-                                        </li>
-                                        <li><img src="../../assets/images/SCNC/11.jpg">
-                                        </li>
-                                        <li><img src="../../assets/images/SCNC/12.jpg">
-                                        </li>
-
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="cook-step-item">
-                                <div class="number">4. </div>
-                                <div class="step-content">
-                                    <p>Khi nếp nguội bớt, bạn cho vào ly, rưới sữa chua lên trên, trộn đều và thưởng
-                                        thức. Bạn có thể thêm đá viên nếu thích ăn lạnh.
-                                        <br>
-                                        Nếp cẩm bùi bùi, thơm dịu ăn cùng với sữa chua béo béo, thanh mát thì hương vị
-                                        thơm ngon, hấp dẫn hết sẩy.
-                                    </p>
-                                    <ul class="step-photo">
-                                        <li><img src="../../assets/images/SCNC/13.jpg">
-                                        </li>
-                                        <li><img src="../../assets/images/SCNC/14.jpg">
-                                        </li>
-                                        <li><img src="../../assets/images/SCNC/15.jpg">
-                                        </li>
-                                        <li><img src="../../assets/images/SCNC/16.jpg">
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                  </div>
                 </div>
-            </div>
-            <div class="col-sm-4">
-                <h5>Các cách trang trí món ăn</h5>
-                <div class="item-instructions">
-                    <img src="../../assets/images/SCNC/6.1.jpg">
-                    <img src="../../assets/images/SCNC/6.2.jpg">
-                    <img src="../../assets/images/SCNC/6.3.jpg">
-                    <img src="../../assets/images/SCNC/6.4.jpg">
-                    <img src="../../assets/images/SCNC/6.5.jpg">
-                    <img src="../../assets/images/SCNC/6.6.jpg">
+                <div class="cook-step-item">
+                  <div class="number">2.</div>
+                  <div class="step-content">
+                    <p>
+                      Cho hỗn hợp sữa chua đã làm phía trên vào từng hũ nhỏ, sau
+                      đó cho các hũ vào nồi cơm điện. Tiếp đến, đổ nước ấm
+                      khoảng 80 độ C ngập 2/3 hũ sữa chua, sau đó đậy nắp nồi
+                      cơm điện lại, bật chế độ hâm nóng trong vòng 15 - 20 phút
+                      rồi rút dây điện ra.
+                      <br />
+                      Sau khoảng 2 tiếng hoặc tới khi nước trong nồi nguội thì
+                      cắm dây điện lại, vẫn để chế độ hâm nóng trong 15 phút.
+                      Lặp lại quá trình này tới khi sữa chua được ủ xong (khoảng
+                      6 - 8 tiếng).
+                    </p>
+                    <ul class="step-photo">
+                      <li><img src="../../assets/images/SCNC/5.jpg" /></li>
+                      <li><img src="../../assets/images/SCNC/6.jpg" /></li>
+                      <li><img src="../../assets/images/SCNC/7.jpg" /></li>
+                      <li><img src="../../assets/images/SCNC/8.jpg" /></li>
+                    </ul>
+                  </div>
                 </div>
+                <div class="cook-step-item">
+                  <div class="number">3.</div>
+                  <div class="step-content">
+                    <p>
+                      Nếp cẩm vo sạch, sau đó ngâm với 500ml nước ấm trong vòng
+                      4 - 6 tiếng rồi chắt nước ra. Sau đó, cho nếp vào nồi nấu
+                      cùng 600ml nước lọc. Nấu ở lửa vừa cho tới khi nước sôi
+                      thì cho lá dứa vào nấu cùng.
+                      <br />
+                      Tiếp tục nấu cho đến khi nước gần cạn thì vớt lá dứa ra,
+                      cho 100ml nước cốt dừa và 100gr đường nâu vào, khuấy đều.
+                      Nấu thêm 15 phút nữa, ăn thử xem nếp cẩm đã chín mềm chưa
+                      rồi tắt bếp.
+                    </p>
+                    <ul class="step-photo">
+                      <li><img src="../../assets/images/SCNC/9.jpg" /></li>
+                      <li><img src="../../assets/images/SCNC/10.jpg" /></li>
+                      <li><img src="../../assets/images/SCNC/11.jpg" /></li>
+                      <li><img src="../../assets/images/SCNC/12.jpg" /></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="cook-step-item">
+                  <div class="number">4.</div>
+                  <div class="step-content">
+                    <p>
+                      Khi nếp nguội bớt, bạn cho vào ly, rưới sữa chua lên trên,
+                      trộn đều và thưởng thức. Bạn có thể thêm đá viên nếu thích
+                      ăn lạnh.
+                      <br />
+                      Nếp cẩm bùi bùi, thơm dịu ăn cùng với sữa chua béo béo,
+                      thanh mát thì hương vị thơm ngon, hấp dẫn hết sẩy.
+                    </p>
+                    <ul class="step-photo">
+                      <li><img src="../../assets/images/SCNC/13.jpg" /></li>
+                      <li><img src="../../assets/images/SCNC/14.jpg" /></li>
+                      <li><img src="../../assets/images/SCNC/15.jpg" /></li>
+                      <li><img src="../../assets/images/SCNC/16.jpg" /></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+        <div class="col-sm-4">
+          <h5>Các cách trang trí món ăn</h5>
+          <div class="item-instructions">
+            <img src="../../assets/images/SCNC/6.1.jpg" />
+            <img src="../../assets/images/SCNC/6.2.jpg" />
+            <img src="../../assets/images/SCNC/6.3.jpg" />
+            <img src="../../assets/images/SCNC/6.4.jpg" />
+            <img src="../../assets/images/SCNC/6.5.jpg" />
+            <img src="../../assets/images/SCNC/6.6.jpg" />
+          </div>
+        </div>
+      </div>
     </div>
 
     <footer class="footer_area section_padding_130_0">
-        <div class="container">
-            <div class="row">
-                <!-- Single Widget-->
-                <div class="col-12 col-sm-6 col-lg-6">
-                    <div class="single-footer-widget section_padding_0_130">
-                        <!-- Footer Logo-->
+      <div class="container">
+        <div class="row">
+          <!-- Single Widget-->
+          <div class="col-12 col-sm-6 col-lg-6">
+            <div class="single-footer-widget section_padding_0_130">
+              <!-- Footer Logo-->
 
-                        <h5 class="widget-title">Cooking Tutoria</h5>
-                        <!-- Copywrite Text-->
-                        <div class="copywrite-text mb-5">
-                            <p>
-                                Cooking Tutoria được tạo nên với mong muốn có thể giúp cho người nội trợ sẽ dễ dàng hơn
-                                trong việc nấu
-                                ăn hàng ngày của mình. Từ công việc chuẩn bị các nguyên liệu, phải chọn món ăn hàng ngày
-                                hoặc lựa chọn những thiết bị dùng bếp sẽ trở nên dễ dàng hơn.
-                            </p>
-                        </div>
-                        <!-- Footer Social Area-->
-                        <div class="footer_social_area"><a href="#" data-toggle="tooltip" data-placement="top" title=""
-                                data-original-title="Facebook"><i class="fa fa-facebook"></i></a><a href="#"
-                                data-toggle="tooltip" data-placement="top" title="" data-original-title="Pinterest"><i
-                                    class="fa fa-pinterest"></i></a><a href="#" data-toggle="tooltip"
-                                data-placement="top" title="" data-original-title="Skype"><i
-                                    class="fa fa-skype"></i></a><a href="#" data-toggle="tooltip" data-placement="top"
-                                title="" data-original-title="Twitter"><i class="fa fa-twitter"></i></a></div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg">
-                    <div class="single-footer-widget section_padding_0_130">
-                        <!-- Widget Title-->
-                        <h5 class="widget-title">Tổng quan</h5>
-                        <!-- Footer Menu-->
-                        <div class="footer_menu">
-                            <ul>
-                                <li><a href="../../Home/home.html">Trang chủ</a></li>
-                                <li><a href="../../Home/home.html#category-title">Danh mục</a></li>
-                                <li><a href="../../sign_in/sign.html">Đăng nhập</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- Single Widget-->
-                <div class="col-12 col-sm-6 col-lg">
-                    <div class="single-footer-widget section_padding_0_130">
-                        <!-- Widget Title-->
-                        <h5 class="widget-title">Danh mục</h5>
-                        <!-- Footer Menu-->
-                        <div class="footer_menu">
-                            <ul>
-                                <li><a href="../../Home/home.html#Breakfast">Breakfast</a></li>
-                                <li><a href="../../Home/home.html#Vegan">Vegan</a></li>
-                                <li><a href="../../Home/home.html#Meat">Meat</a></li>
-                                <li><a href="../../Home/home.html#Dessert">Dessert</a></li>
-                                <li><a href="../../Home/home.html#Lunch">Lunch</a></li>
-                                <li><a href="../../Home/home.html#Chocolate">Chocolate</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg">
-                    <div class="single-footer-widget section_padding_0_130">
-                        <!-- Widget Title-->
-                        <h5 class="widget-title">Liên hệ</h5>
-                        <!-- Footer Menu-->
-                        <div class="footer_menu">
-                            <ul>
-                                <li><a href="mailto:duynm.23it@vku.udn.vn"
-                                        class="fas fa-envelope-open-text">&#160;duynm.23it@vku.udn.vn</a></li>
-                                <li><a href="https://www.facebook.com/duy.nguyenminh.56679"
-                                        class="fab fa-facebook">&#160;Nguyễn Minh Duy</a></li>
-                                <li><a href="#" class='fas fa-phone'>&#160;0123456789</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div style="text-align: center;" class="p-3">
-                    <p>&copy; Cooking Tutorial 2024 Thiết Kế web</p>
-                </div>
-
+              <h5 class="widget-title">Cooking Tutoria</h5>
+              <!-- Copywrite Text-->
+              <div class="copywrite-text mb-5">
+                <p>
+                  Cooking Tutoria được tạo nên với mong muốn có thể giúp cho
+                  người nội trợ sẽ dễ dàng hơn trong việc nấu ăn hàng ngày của
+                  mình. Từ công việc chuẩn bị các nguyên liệu, phải chọn món ăn
+                  hàng ngày hoặc lựa chọn những thiết bị dùng bếp sẽ trở nên dễ
+                  dàng hơn.
+                </p>
+              </div>
+              <!-- Footer Social Area-->
+              <div class="footer_social_area">
+                <a
+                  href="#"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title=""
+                  data-original-title="Facebook"
+                  ><i class="fa fa-facebook"></i></a
+                ><a
+                  href="#"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title=""
+                  data-original-title="Pinterest"
+                  ><i class="fa fa-pinterest"></i></a
+                ><a
+                  href="#"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title=""
+                  data-original-title="Skype"
+                  ><i class="fa fa-skype"></i></a
+                ><a
+                  href="#"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title=""
+                  data-original-title="Twitter"
+                  ><i class="fa fa-twitter"></i
+                ></a>
+              </div>
             </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg">
+            <div class="single-footer-widget section_padding_0_130">
+              <!-- Widget Title-->
+              <h5 class="widget-title">Tổng quan</h5>
+              <!-- Footer Menu-->
+              <div class="footer_menu">
+                <ul>
+                  <li><a href="../../Home/home.html">Trang chủ</a></li>
+                  <li>
+                    <a href="../../Home/home.html#category-title">Danh mục</a>
+                  </li>
+                  <li><a href="../../sign_in/sign.html">Đăng nhập</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Single Widget-->
+          <div class="col-12 col-sm-6 col-lg">
+            <div class="single-footer-widget section_padding_0_130">
+              <!-- Widget Title-->
+              <h5 class="widget-title">Danh mục</h5>
+              <!-- Footer Menu-->
+              <div class="footer_menu">
+                <ul>
+                  <li>
+                    <a href="../../Home/home.html#Breakfast">Breakfast</a>
+                  </li>
+                  <li><a href="../../Home/home.html#Vegan">Vegan</a></li>
+                  <li><a href="../../Home/home.html#Meat">Meat</a></li>
+                  <li><a href="../../Home/home.html#Dessert">Dessert</a></li>
+                  <li><a href="../../Home/home.html#Lunch">Lunch</a></li>
+                  <li>
+                    <a href="../../Home/home.html#Chocolate">Chocolate</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg">
+            <div class="single-footer-widget section_padding_0_130">
+              <!-- Widget Title-->
+              <h5 class="widget-title">Liên hệ</h5>
+              <!-- Footer Menu-->
+              <div class="footer_menu">
+                <ul>
+                  <li>
+                    <a
+                      href="mailto:duynm.23it@vku.udn.vn"
+                      class="fas fa-envelope-open-text"
+                      >&#160;duynm.23it@vku.udn.vn</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.facebook.com/duy.nguyenminh.56679"
+                      class="fab fa-facebook"
+                      >&#160;Nguyễn Minh Duy</a
+                    >
+                  </li>
+                  <li><a href="#" class="fas fa-phone">&#160;0123456789</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
-
+          <div style="text-align: center" class="p-3">
+            <p>&copy; Cooking Tutorial 2024 Thiết Kế web</p>
+          </div>
         </div>
+      </div>
     </footer>
-
-
-</body>
-
+  </body>
 </html>

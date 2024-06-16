@@ -1,287 +1,376 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kem trái cây</title>
-    <link rel="stylesheet" href="../css/bootstrap.css">
-    <link rel="stylesheet" href="detail.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="detail.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="/public/assets/images/logo.png"
+      type="image/x-icon"
+      sizes="48x48"
+    />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">
-            <img src="/assets/images/logo.png" alt="">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+      <a class="navbar-brand" href="#">
+        <img src="/assets/images/logo.png" alt="" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="/home/home.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Menu
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Bữa sáng</a>
-                        <a class="dropdown-item" href="#">Bữa trưa</a>
-                        <a class="dropdown-item" href="#">Ăn nhẹ</a>
-                        <a class="dropdown-item" href="#">Món Rau</a>
-                        <a class="dropdown-item" href="#">Món gà</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/parallax_scroll/introduc.html">Giới thiệu</a>
-                </li>
-            </ul>
-            <form class="form-inline search-container mx-lg-auto ml-lg-n5 my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            </form>
-            <a href="/sign_in/sign.html" class="btn btn-primary" data-mdb-ripple-init>Đăng nhập</a>
-
-        </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/home/home.html"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Menu
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Bữa sáng</a>
+              <a class="dropdown-item" href="#">Bữa trưa</a>
+              <a class="dropdown-item" href="#">Ăn nhẹ</a>
+              <a class="dropdown-item" href="#">Món Rau</a>
+              <a class="dropdown-item" href="#">Món gà</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/parallax_scroll/introduc.html"
+              >Giới thiệu</a
+            >
+          </li>
+        </ul>
+        <form
+          class="form-inline search-container mx-lg-auto ml-lg-n5 my-2 my-lg-0"
+        >
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+        </form>
+        <a
+          href="/sign_in/sign.html"
+          class="btn btn-primary"
+          data-mdb-ripple-init
+          >Đăng nhập</a
+        >
+      </div>
     </nav>
     <div class="container">
-        <div class="row">
-            <div class="col-sm-8">
-                <div class="video">
-                    <iframe width="100%" height="470"
-                        src="https://www.youtube.com/embed/bNQaomRBYos?si=QHx-bHpswDX2aClj" title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div class="row">
+        <div class="col-sm-8">
+          <div class="video">
+            <iframe
+              width="100%"
+              height="470"
+              src="https://www.youtube.com/embed/bNQaomRBYos?si=QHx-bHpswDX2aClj"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="content">
+            <h5>Kem trái cây</h5>
+            <div class="desc">
+              Kem sữa chua trái cây ngon lành, không bị dăm đá, cùng xem cách
+              làm món kem sữa chua với vị trái cây tươi mát, giải tỏa cơn nóng
+              trong người hiệu quả.
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <div class="ingredient">
+                  <h5>Thành phần</h5>
                 </div>
-                <div class="content">
-                    <h5>Kem trái cây</h5>
-                    <div class="desc">Kem sữa chua trái cây ngon lành, không bị dăm đá, cùng xem cách làm món kem sữa
-                        chua với vị trái cây tươi mát, giải tỏa cơn nóng trong người hiệu quả.
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <div class="ingredient">
-                                <h5>Thành phần</h5>
-                            </div>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="ingredient-name">Sữa tươi không đường</span>
-                            <span class="ingredient-quantity">200 ml</span>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="ingredient-name">Trái cây(tùy ý)</span>
-                            <span class="ingredient-quantity">800 gram</span>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="ingredient-name">Sữa đặc</span>
-                            <span class="ingredient-quantity">1 hộp</span>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="ingredient-name">Sữa chua</span>
-                            <span class="ingredient-quantity">2 hộp</span>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="ingredient-name">whipping cream</span>
-                            <span class="ingredient-quantity">150 ml</span>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="ingredient-name">Dừa tươi bào sợi</span>
-                            <span class="ingredient-quantity">100 gram</span>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="ingredient-name">Nước cốt dừa</span>
-                            <span class="ingredient-quantity">400 ml</span>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="ingredient-name">Bột năng</span>
-                            <span class="ingredient-quantity">50 gram</span>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="ingredient-name">Đậu phộng rang</span>
-                            <span class="ingredient-quantity">50 gram</span>
-                        </li>
+              </li>
+              <li class="list-group-item">
+                <span class="ingredient-name">Sữa tươi không đường</span>
+                <span class="ingredient-quantity">200 ml</span>
+              </li>
+              <li class="list-group-item">
+                <span class="ingredient-name">Trái cây(tùy ý)</span>
+                <span class="ingredient-quantity">800 gram</span>
+              </li>
+              <li class="list-group-item">
+                <span class="ingredient-name">Sữa đặc</span>
+                <span class="ingredient-quantity">1 hộp</span>
+              </li>
+              <li class="list-group-item">
+                <span class="ingredient-name">Sữa chua</span>
+                <span class="ingredient-quantity">2 hộp</span>
+              </li>
+              <li class="list-group-item">
+                <span class="ingredient-name">whipping cream</span>
+                <span class="ingredient-quantity">150 ml</span>
+              </li>
+              <li class="list-group-item">
+                <span class="ingredient-name">Dừa tươi bào sợi</span>
+                <span class="ingredient-quantity">100 gram</span>
+              </li>
+              <li class="list-group-item">
+                <span class="ingredient-name">Nước cốt dừa</span>
+                <span class="ingredient-quantity">400 ml</span>
+              </li>
+              <li class="list-group-item">
+                <span class="ingredient-name">Bột năng</span>
+                <span class="ingredient-quantity">50 gram</span>
+              </li>
+              <li class="list-group-item">
+                <span class="ingredient-name">Đậu phộng rang</span>
+                <span class="ingredient-quantity">50 gram</span>
+              </li>
+            </ul>
+            <div class="steps-list">
+              <h5>Hướng dẫn thực hiện</h5>
+              <div class="cook-step-content">
+                <div class="cook-step-item">
+                  <div class="number">1.</div>
+                  <div class="step-content">
+                    <p>
+                      Đầu tiên, bạn chuẩn bị một cái nồi, cho vào 400ml nước cốt
+                      dừa, 200ml sữa tươi, 150ml kem sữa tươi, 200g sữa đặc, 1g
+                      muối để kem có vị đậm đà. Rồi bạn khuấy thật đều hỗn hợp
+                      trên cho các nguyên liệu hòa quyện rồi đặt lên bếp đun ở
+                      lửa nhỏ trong 10 phút.
+                      <br />
+                      Tiếp theo, bạn cho vào 100ml nước lọc vào chén 50g bột
+                      năng, khuấy đều cho tan bột. Đối với trái cây, bạn đem đi
+                      cắt hạt lựu, cắt sợi hay cắt khoanh tùy thích.
+                    </p>
+                    <ul class="step-photo">
+                      <li><img src="../../assets/images/KTC/1.jpg" /></li>
+                      <li><img src="../../assets/images/KTC/2.jpg" /></li>
                     </ul>
-                    <div class="steps-list">
-                        <h5>Hướng dẫn thực hiện</h5>
-                        <div class="cook-step-content">
-                            <div class="cook-step-item">
-                                <div class="number">1. </div>
-                                <div class="step-content">
-                                    <p>Đầu tiên, bạn chuẩn bị một cái nồi, cho vào 400ml nước cốt dừa, 200ml sữa tươi,
-                                        150ml kem sữa tươi, 200g sữa đặc, 1g muối để kem có vị đậm đà. Rồi bạn khuấy
-                                        thật đều hỗn hợp trên cho các nguyên liệu hòa quyện rồi đặt lên bếp đun ở lửa
-                                        nhỏ trong 10 phút.
-                                        <br>
-                                        Tiếp theo, bạn cho vào 100ml nước lọc vào chén 50g bột năng, khuấy đều cho tan
-                                        bột. Đối với trái cây, bạn đem đi cắt hạt lựu, cắt sợi hay cắt khoanh tùy thích.
-                                    </p>
-                                    <ul class="step-photo">
-                                        <li><img src="../../assets/images/KTC/1.jpg">
-                                        </li>
-                                        <li><img src="../../assets/images/KTC/2.jpg">
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="cook-step-item">
-                                <div class="number">2. </div>
-                                <div class="step-content">
-                                    <p>Sau 10 phút thì hỗn hợp nước cốt dừa đã sôi lăn tăn, cho chén bột năng ban đầu
-                                        vào và khuấy đều, lúc này bạn có thể nêm nếp độ ngọt tùy thích. Bạn khuấy đến
-                                        khi hỗn hợp sánh đặc, sền sệt thì tắt bếp, để nguội.
-                                        <br>
-                                        Bạn đổ 200ml sữa chua vào nồi hỗn hợp cốt dừa khi còn ấm, khuấy đều lên cho hỗn
-                                        hợp hòa quyện. Bạn có thể dùng sữa chua tự ủ hoặc hộp sữa chua có đường hay
-                                        không đường đều được.
-                                    </p>
-                                    <ul class="step-photo">
-                                        <li><img src="../../assets/images/KTC/5.jpg">
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="cook-step-item">
-                                <div class="number">3. </div>
-                                <div class="step-content">
-                                    <p>Tiếp theo, bạn chuẩn bị khuôn tùy thích, cho 1 lớp trái cây vào và phủ lên trên
-                                        là lớp cốt dừa, thực hiện tương tự đến khi gần đầy hộp thì rắc đậu phộng, dừa
-                                        tươi bào sợi nên, đậy nắp lại. Sau đó, bạn đặt vào ngăn lạnh nửa ngày, cuối cùng
-                                        mang đặt ở ngăn mát để tránh kem bị dăm đá.</p>
-                                    <ul class="step-photo">
-                                        <li><img src="../../assets/images/KTC/9.jpg">
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="cook-step-item">
-                                <div class="number">4. </div>
-                                <div class="step-content">
-                                    <p>Kem sữa chua khi đông lại có màu sắc khá đẹp mắt, nhiều màu từ các loại trái cây
-                                        trông rất ngon miệng. Kem không bị dăm đá, dẻo dẻo rất ngon.
-                                    </p>
-                                    <ul class="step-photo">
-                                        <li><img src="../../assets/images/KTC/13.jpg">
-                                        </li>
-                                        <li><img src="../../assets/images/KTC/14.jpg">
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                  </div>
                 </div>
-            </div>
-            <div class="col-sm-4">
-                <h5>Các cách trang trí món ăn</h5>
-                <div class="item-instructions">
-                    <img src="../../assets/images/KTC/6.1.jpg">
-                    <img src="../../assets/images/KTC/6.2.jpg">
-                    <img src="../../assets/images/KTC/6.3.jpg">
-                    <img src="../../assets/images/KTC/6.4.jpg">
-                    <img src="../../assets/images/KTC/6.5.jpg">
-                    <img src="../../assets/images/KTC/6.6.jpg">
+                <div class="cook-step-item">
+                  <div class="number">2.</div>
+                  <div class="step-content">
+                    <p>
+                      Sau 10 phút thì hỗn hợp nước cốt dừa đã sôi lăn tăn, cho
+                      chén bột năng ban đầu vào và khuấy đều, lúc này bạn có thể
+                      nêm nếp độ ngọt tùy thích. Bạn khuấy đến khi hỗn hợp sánh
+                      đặc, sền sệt thì tắt bếp, để nguội.
+                      <br />
+                      Bạn đổ 200ml sữa chua vào nồi hỗn hợp cốt dừa khi còn ấm,
+                      khuấy đều lên cho hỗn hợp hòa quyện. Bạn có thể dùng sữa
+                      chua tự ủ hoặc hộp sữa chua có đường hay không đường đều
+                      được.
+                    </p>
+                    <ul class="step-photo">
+                      <li><img src="../../assets/images/KTC/5.jpg" /></li>
+                    </ul>
+                  </div>
                 </div>
+                <div class="cook-step-item">
+                  <div class="number">3.</div>
+                  <div class="step-content">
+                    <p>
+                      Tiếp theo, bạn chuẩn bị khuôn tùy thích, cho 1 lớp trái
+                      cây vào và phủ lên trên là lớp cốt dừa, thực hiện tương tự
+                      đến khi gần đầy hộp thì rắc đậu phộng, dừa tươi bào sợi
+                      nên, đậy nắp lại. Sau đó, bạn đặt vào ngăn lạnh nửa ngày,
+                      cuối cùng mang đặt ở ngăn mát để tránh kem bị dăm đá.
+                    </p>
+                    <ul class="step-photo">
+                      <li><img src="../../assets/images/KTC/9.jpg" /></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="cook-step-item">
+                  <div class="number">4.</div>
+                  <div class="step-content">
+                    <p>
+                      Kem sữa chua khi đông lại có màu sắc khá đẹp mắt, nhiều
+                      màu từ các loại trái cây trông rất ngon miệng. Kem không
+                      bị dăm đá, dẻo dẻo rất ngon.
+                    </p>
+                    <ul class="step-photo">
+                      <li><img src="../../assets/images/KTC/13.jpg" /></li>
+                      <li><img src="../../assets/images/KTC/14.jpg" /></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+        <div class="col-sm-4">
+          <h5>Các cách trang trí món ăn</h5>
+          <div class="item-instructions">
+            <img src="../../assets/images/KTC/6.1.jpg" />
+            <img src="../../assets/images/KTC/6.2.jpg" />
+            <img src="../../assets/images/KTC/6.3.jpg" />
+            <img src="../../assets/images/KTC/6.4.jpg" />
+            <img src="../../assets/images/KTC/6.5.jpg" />
+            <img src="../../assets/images/KTC/6.6.jpg" />
+          </div>
+        </div>
+      </div>
     </div>
 
     <footer class="footer_area section_padding_130_0">
-        <div class="container">
-            <div class="row">
-                <!-- Single Widget-->
-                <div class="col-12 col-sm-6 col-lg-6">
-                    <div class="single-footer-widget section_padding_0_130">
-                        <!-- Footer Logo-->
+      <div class="container">
+        <div class="row">
+          <!-- Single Widget-->
+          <div class="col-12 col-sm-6 col-lg-6">
+            <div class="single-footer-widget section_padding_0_130">
+              <!-- Footer Logo-->
 
-                        <h5 class="widget-title">Cooking Tutoria</h5>
-                        <!-- Copywrite Text-->
-                        <div class="copywrite-text mb-5">
-                            <p>
-                                Cooking Tutoria được tạo nên với mong muốn có thể giúp cho người nội trợ sẽ dễ dàng hơn
-                                trong việc nấu
-                                ăn hàng ngày của mình. Từ công việc chuẩn bị các nguyên liệu, phải chọn món ăn hàng ngày
-                                hoặc lựa chọn những thiết bị dùng bếp sẽ trở nên dễ dàng hơn.
-                            </p>
-                        </div>
-                        <!-- Footer Social Area-->
-                        <div class="footer_social_area"><a href="#" data-toggle="tooltip" data-placement="top" title=""
-                                data-original-title="Facebook"><i class="fa fa-facebook"></i></a><a href="#"
-                                data-toggle="tooltip" data-placement="top" title="" data-original-title="Pinterest"><i
-                                    class="fa fa-pinterest"></i></a><a href="#" data-toggle="tooltip"
-                                data-placement="top" title="" data-original-title="Skype"><i
-                                    class="fa fa-skype"></i></a><a href="#" data-toggle="tooltip" data-placement="top"
-                                title="" data-original-title="Twitter"><i class="fa fa-twitter"></i></a></div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg">
-                    <div class="single-footer-widget section_padding_0_130">
-                        <!-- Widget Title-->
-                        <h5 class="widget-title">Tổng quan</h5>
-                        <!-- Footer Menu-->
-                        <div class="footer_menu">
-                            <ul>
-                                <li><a href="../../Home/home.html">Trang chủ</a></li>
-                                <li><a href="../../Home/home.html#category-title">Danh mục</a></li>
-                                <li><a href="../../sign_in/sign.html">Đăng nhập</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- Single Widget-->
-                <div class="col-12 col-sm-6 col-lg">
-                    <div class="single-footer-widget section_padding_0_130">
-                        <!-- Widget Title-->
-                        <h5 class="widget-title">Danh mục</h5>
-                        <!-- Footer Menu-->
-                        <div class="footer_menu">
-                            <ul>
-                                <li><a href="../../Home/home.html#Breakfast">Breakfast</a></li>
-                                <li><a href="../../Home/home.html#Vegan">Vegan</a></li>
-                                <li><a href="../../Home/home.html#Meat">Meat</a></li>
-                                <li><a href="../../Home/home.html#Dessert">Dessert</a></li>
-                                <li><a href="../../Home/home.html#Lunch">Lunch</a></li>
-                                <li><a href="../../Home/home.html#Chocolate">Chocolate</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg">
-                    <div class="single-footer-widget section_padding_0_130">
-                        <!-- Widget Title-->
-                        <h5 class="widget-title">Liên hệ</h5>
-                        <!-- Footer Menu-->
-                        <div class="footer_menu">
-                            <ul>
-                                <li><a href="mailto:duynm.23it@vku.udn.vn"
-                                        class="fas fa-envelope-open-text">&#160;duynm.23it@vku.udn.vn</a></li>
-                                <li><a href="https://www.facebook.com/duy.nguyenminh.56679"
-                                        class="fab fa-facebook">&#160;Nguyễn Minh Duy</a></li>
-                                <li><a href="#" class='fas fa-phone'>&#160;0123456789</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div style="text-align: center;" class="p-3">
-                    <p>&copy; Cooking Tutorial 2024 Thiết Kế web</p>
-                </div>
-
+              <h5 class="widget-title">Cooking Tutoria</h5>
+              <!-- Copywrite Text-->
+              <div class="copywrite-text mb-5">
+                <p>
+                  Cooking Tutoria được tạo nên với mong muốn có thể giúp cho
+                  người nội trợ sẽ dễ dàng hơn trong việc nấu ăn hàng ngày của
+                  mình. Từ công việc chuẩn bị các nguyên liệu, phải chọn món ăn
+                  hàng ngày hoặc lựa chọn những thiết bị dùng bếp sẽ trở nên dễ
+                  dàng hơn.
+                </p>
+              </div>
+              <!-- Footer Social Area-->
+              <div class="footer_social_area">
+                <a
+                  href="#"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title=""
+                  data-original-title="Facebook"
+                  ><i class="fa fa-facebook"></i></a
+                ><a
+                  href="#"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title=""
+                  data-original-title="Pinterest"
+                  ><i class="fa fa-pinterest"></i></a
+                ><a
+                  href="#"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title=""
+                  data-original-title="Skype"
+                  ><i class="fa fa-skype"></i></a
+                ><a
+                  href="#"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title=""
+                  data-original-title="Twitter"
+                  ><i class="fa fa-twitter"></i
+                ></a>
+              </div>
             </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg">
+            <div class="single-footer-widget section_padding_0_130">
+              <!-- Widget Title-->
+              <h5 class="widget-title">Tổng quan</h5>
+              <!-- Footer Menu-->
+              <div class="footer_menu">
+                <ul>
+                  <li><a href="../../Home/home.html">Trang chủ</a></li>
+                  <li>
+                    <a href="../../Home/home.html#category-title">Danh mục</a>
+                  </li>
+                  <li><a href="../../sign_in/sign.html">Đăng nhập</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Single Widget-->
+          <div class="col-12 col-sm-6 col-lg">
+            <div class="single-footer-widget section_padding_0_130">
+              <!-- Widget Title-->
+              <h5 class="widget-title">Danh mục</h5>
+              <!-- Footer Menu-->
+              <div class="footer_menu">
+                <ul>
+                  <li>
+                    <a href="../../Home/home.html#Breakfast">Breakfast</a>
+                  </li>
+                  <li><a href="../../Home/home.html#Vegan">Vegan</a></li>
+                  <li><a href="../../Home/home.html#Meat">Meat</a></li>
+                  <li><a href="../../Home/home.html#Dessert">Dessert</a></li>
+                  <li><a href="../../Home/home.html#Lunch">Lunch</a></li>
+                  <li>
+                    <a href="../../Home/home.html#Chocolate">Chocolate</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg">
+            <div class="single-footer-widget section_padding_0_130">
+              <!-- Widget Title-->
+              <h5 class="widget-title">Liên hệ</h5>
+              <!-- Footer Menu-->
+              <div class="footer_menu">
+                <ul>
+                  <li>
+                    <a
+                      href="mailto:duynm.23it@vku.udn.vn"
+                      class="fas fa-envelope-open-text"
+                      >&#160;duynm.23it@vku.udn.vn</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.facebook.com/duy.nguyenminh.56679"
+                      class="fab fa-facebook"
+                      >&#160;Nguyễn Minh Duy</a
+                    >
+                  </li>
+                  <li><a href="#" class="fas fa-phone">&#160;0123456789</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
-
+          <div style="text-align: center" class="p-3">
+            <p>&copy; Cooking Tutorial 2024 Thiết Kế web</p>
+          </div>
         </div>
+      </div>
     </footer>
-
-
-</body>
-
+  </body>
 </html>
