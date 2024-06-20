@@ -3,7 +3,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
-  max-width: 99vw !important;
+  max-width: 100vw !important;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: scroll;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
