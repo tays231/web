@@ -45,4 +45,9 @@ document.getElementById('signUpForm').addEventListener('submit', function(event)
 function validateEmail(email) {
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return re.test(email);
-}
+}/*
+const template = document.getElementById('dialog-template');
+
+document.body.appendChild(
+  document.importNode(template.content, true)
+);*/

@@ -37,75 +37,75 @@
   </head>
 
 <body>
-    <div id="fixed-menu">
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <a class="navbar-brand" href="#">
-            <img src="/public/assets/images/logo.png" alt="" />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-  
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="/public/home/home.html"
-                  >Home <span class="sr-only">(current)</span></a
-                >
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Menu
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#Breakfast">Bữa sáng</a>
-                  <a class="dropdown-item" href="#Lunch">Bữa trưa</a>
-                  <a class="dropdown-item" href="#Dessert">Ăn nhẹ</a>
-                  <a class="dropdown-item" href="#Vegan">Món Rau</a>
-                  <a class="dropdown-item" href="#Meat">Món gà</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/public/parallax_scroll/introduc.html"
-                  >Giới thiệu</a
-                >
-              </li>
-            </ul>
-            <form
-              class="form-inline search-container mx-lg-auto ml-lg-n5 my-2 my-lg-0"
+  <div id="fixed-menu">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#">
+        <img src="/public/assets/images/logo.png" alt="" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/public/home/home.html"
+              >Home <span class="sr-only">(current)</span></a
             >
-              <input
-                class="form-control mr-sm-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-            </form>
+          </li>
+          <li class="nav-item dropdown">
             <a
-              href="/public/sign_in/sign.html"
-              class="btn btn-primary"
-              data-mdb-ripple-init
-              >Đăng nhập</a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
             >
-          </div>
-        </nav>
+              Menu
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#Breakfast">Bữa sáng</a>
+              <a class="dropdown-item" href="#Lunch">Bữa trưa</a>
+              <a class="dropdown-item" href="#Dessert">Ăn nhẹ</a>
+              <a class="dropdown-item" href="#Vegan">Món Rau</a>
+              <a class="dropdown-item" href="#Meat">Món gà</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/public/parallax_scroll/introduc.html"
+              >Giới thiệu</a
+            >
+          </li>
+        </ul>
+        <form
+          class="form-inline search-container mx-lg-auto ml-lg-n5 my-2 my-lg-0"
+        >
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+        </form>
+        <a
+          href="/public/sign_in/sign.html"
+          class="btn btn-primary"
+          data-mdb-ripple-init
+          >Đăng nhập</a
+        >
       </div>
+    </nav>
+  </div>
     <div class="container full-width-container">
         <div class="forms-container">
             <div class="signIn-signUp">
@@ -167,6 +167,84 @@
                         </a>
                     </div>
                 </form>
+
+<!--<template id="dialog-template">
+  <script>
+    document.getElementById('launch-dialog').addEventListener('click', () => {
+      const wrapper = document.querySelector('.wrapper');
+      const closeButton = document.querySelector('button.close');
+      const wasFocused = document.activeElement;
+      wrapper.classList.add('open');
+      closeButton.focus();
+      closeButton.addEventListener('click', () => {
+        wrapper.classList.remove('open');
+        wasFocused.focus();
+      });
+    });
+  </script>
+  <style>
+    .wrapper {
+      opacity: 0;
+      transition: visibility 0s, opacity 0.25s ease-in;
+    }
+    .wrapper:not(.open) {
+      visibility: hidden;
+    }
+    .wrapper.open {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      height: 100vh;
+      position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      opacity: 1;
+      visibility: visible;
+    }
+    .overlay {
+      background: rgba(0, 0, 0, 0.8);
+      height: 100%;
+      position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      width: 100%;
+    }
+    .dialog {
+      background: #ffffff;
+      max-width: 600px;
+      padding: 1rem;
+      position: fixed;
+    }
+    button {
+      all: unset;
+      cursor: pointer;
+      font-size: 1.25rem;
+      position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+    button:focus {
+      border: 2px solid blue;
+    }
+  </style>
+  <div class="wrapper">
+  <div class="overlay"></div>
+    <div class="dialog" role="dialog" aria-labelledby="title" aria-describedby="content">
+      <button class="close" aria-label="Close">✖️</button>
+      <h1 id="title">Hello world</h1>
+      <div id="content" class="content">
+        <p>This is content in the body of our modal</p>
+      </div>
+    </div>
+  </div>
+</template>
+
+<button id="launch-dialog">Launch dialog</button> 
+-->
             </div>
         </div>
         <div class="panels-container">
@@ -189,6 +267,9 @@
         </div>
     </div>
     <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
