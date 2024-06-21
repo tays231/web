@@ -266,6 +266,9 @@ h2 {
   padding: 0.8em 1.5em;
   border-radius: 15px;
 }
+.category-title h2 {
+  margin-left: 10px;
+}
 
 .category-title a:hover {
   background: var(--cl-3--);
@@ -277,6 +280,7 @@ h2 {
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 2em;
   padding: 2em 0;
+  margin-left: 10px;
 }
 
 .cat-card {
