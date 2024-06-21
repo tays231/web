@@ -26,54 +26,87 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">
-            <img src="/assets/images/logo.png" alt="">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <div id="fixed-menu">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="#">
+            <img src="/public/assets/images/logo.png" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
-        </button>
-    
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="/home/home.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Menu
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Bữa sáng</a>
-                        <a class="dropdown-item" href="#">Bữa trưa</a>
-                        <a class="dropdown-item" href="#">Ăn nhẹ</a>
-                        <a class="dropdown-item" href="#">Món Rau</a>
-                        <a class="dropdown-item" href="#">Món gà</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/parallax_scroll/introduc.html">Giới thiệu</a>
-                </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="/public/home/home.html"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Menu
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#Breakfast">Bữa sáng</a>
+                  <a class="dropdown-item" href="#Lunch">Bữa trưa</a>
+                  <a class="dropdown-item" href="#Dessert">Ăn nhẹ</a>
+                  <a class="dropdown-item" href="#Vegan">Món Rau</a>
+                  <a class="dropdown-item" href="#Meat">Món gà</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/public/parallax_scroll/introduc.html"
+                  >Giới thiệu</a
+                >
+              </li>
             </ul>
-            <form class="form-inline search-container mx-lg-auto ml-lg-n5 my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <form
+              class="form-inline search-container mx-lg-auto ml-lg-n5 my-2 my-lg-0"
+            >
+              <input
+                class="form-control mr-sm-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
             </form>
-            <a href="/sign_in/sign.html" class="btn btn-primary" data-mdb-ripple-init>Đăng nhập</a>
-
-        </div>
-    </nav>
+            <a
+              href="/public/sign_in/sign.html"
+              class="btn btn-primary"
+              data-mdb-ripple-init
+              >Đăng nhập</a
+            >
+          </div>
+        </nav>
+      </div>
     <div class="container full-width-container">
         <div class="forms-container">
             <div class="signIn-signUp">
-                <form action="" class="sign-in-form">
+                <form class="sign-in-form" id="signInForm">
                     <h2 class="title">Sign In</h2>
                     <div class="input-field">
                         <i class='bx bx-user'></i>
-                        <input type="text" placeholder="User Name">
+                        <input type="text" placeholder="User Name" id="signInUserName" required>
                     </div>
                     <div class="input-field">
                         <i class='bx bx-lock-alt'></i>
-                        <input type="password" placeholder="Password">
+                        <input type="password" placeholder="Password" id="signInPassword" required>
                     </div>
                     <input type="submit" value="Log In" class="btn solid">
                     <p class="social-text">Or Sign in with social platforms</p>
@@ -92,19 +125,19 @@
                         </a>
                     </div>
                 </form>
-                <form action="" class="sign-up-form">
+                <form class="sign-up-form" id="signUpForm">
                     <h2 class="title">Sign Up</h2>
                     <div class="input-field">
                         <i class='bx bx-user'></i>
-                        <input type="text" placeholder="User Name">
+                        <input type="text" placeholder="User Name" id="signUpUserName" required>
                     </div>
                     <div class="input-field">
                         <i class='bx bx-envelope'></i>
-                        <input type="email" placeholder="Email">
+                        <input type="email" placeholder="Email" id="signUpEmail" required>
                     </div>
                     <div class="input-field">
                         <i class='bx bx-lock-alt'></i>
-                        <input type="password" placeholder="Password">
+                        <input type="password" placeholder="Password" id="signUpPassword" required>
                     </div>
                     <input type="submit" value="Sign Up" class="btn solid">
                     <p class="social-text">Or Sign up with social platforms</p>

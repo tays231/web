@@ -21,48 +21,80 @@
 
 </head>
 <body>
+  <div id="fixed-menu">
     <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">
-            <img src="/assets/images/logo.png" alt="">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="/home/home.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Menu
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Bữa sáng</a>
-                        <a class="dropdown-item" href="#">Bữa trưa</a>
-                        <a class="dropdown-item" href="#">Ăn nhẹ</a>
-                        <a class="dropdown-item" href="#">Món Rau</a>
-                        <a class="dropdown-item" href="#">Món gà</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/parallax_scroll/introduc.html">Giới thiệu</a>
-                </li>
-            </ul>
-            <form class="form-inline search-container mx-lg-auto ml-lg-n5 my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            </form>
-            <a href="/sign_in/sign.html" class="btn btn-primary" data-mdb-ripple-init>Đăng nhập</a>
+      <a class="navbar-brand" href="#">
+        <img src="/public/assets/images/logo.png" alt="" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/public/home/home.html"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Menu
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#Breakfast">Bữa sáng</a>
+              <a class="dropdown-item" href="#Lunch">Bữa trưa</a>
+              <a class="dropdown-item" href="#Dessert">Ăn nhẹ</a>
+              <a class="dropdown-item" href="#Vegan">Món Rau</a>
+              <a class="dropdown-item" href="#Meat">Món gà</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/public/parallax_scroll/introduc.html"
+              >Giới thiệu</a
+            >
+          </li>
+        </ul>
+        <form
+          class="form-inline search-container mx-lg-auto ml-lg-n5 my-2 my-lg-0"
+        >
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+        </form>
+        <a
+          href="/public/sign_in/sign.html"
+          class="btn btn-primary"
+          data-mdb-ripple-init
+          >Đăng nhập</a
+        >
+      </div>
     </nav>
-    
+  </div>
     <div class="banner">
         <div class="bg bg-1"></div>
         <div class="bg bg-2"></div>
         <div class="bg bg-3"></div>
-        <h1>Minh Duy foood</h1>
+        <h1>Ojk Global</h1>
         <div class="bg bg-4"></div>
         <div class="bg bg-5"></div>
         <div class="bg bg-6"></div>
@@ -72,10 +104,14 @@
     </div>
 
     <div class="tab intro">
-        <h2 class="animation-show">Ojk Global</h2>
+        <h2 class="animation-show">Cooking Tutoria Web </h2>
         <img src="img/logo.jpg" alt="" class="animation-show">
         <p class="animation-show">
-            
+          Cooking Tutoria được tạo nên với mong muốn có thể giúp cho
+          người nội trợ sẽ dễ dàng hơn trong việc nấu ăn hàng ngày của
+          mình. Từ công việc chuẩn bị các nguyên liệu, phải chọn món ăn
+          hàng ngày hoặc lựa chọn những thiết bị dùng bếp sẽ trở nên dễ
+          dàng hơn.
         </p>
         <button class="animation-show">Contact</button>
     </div>
@@ -83,99 +119,134 @@
     <div class="tab library">
         <div class="animation-show">
             <img src="img/9.jpg">
-            <p>Image Name</p>
+            
         </div>
         <div class="animation-show">
             <img src="img/10.jpg">
-            <p>Image Name</p>
+          
         </div>
         <div class="animation-show">
             <img src="img/11.jpg">
-            <p>Image Name</p>
+           
         </div>
         <div class="animation-show">
             <img src="img/12.jpg">
-            <p>Image Name</p>
+          
         </div>
     </div>
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-        <div class="container" data-aos="fade-up">
+    <div class="container-map">
+      <div class="info">
+        <h2>OJK Group</h2>
+        <p><span class="anticon anticon-environment-outlined"></span> Address: 450 Tran Dai Nghia, Dien Ngoc, Ngu Hanh Son, Da Nang 550000</p>
+        <p><span class="anticon anticon-phone-outlined"></span> Phone: (123) 456-7890</p>
+        <p><span class="anticon anticon-mail-outlined"></span> Email: contact@ojkglobal.com</p>
+        <p><span class="anticon anticon-global-outlined"></span> Website: <a href="https://www.itnexus.com">www.it3.com</a></p>
+      </div>
+      <div class="map">
+        <iframe
+          width="100%"
+          height="600"
+          frameborder="0"
+          scrolling="no"
+          marginheight="0"
+          marginwidth="0"
+          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=S%E1%BB%91%20450%20%C4%90%C6%B0%E1%BB%9Dng%20Tr%E1%BA%A7n%20%C4%90%E1%BA%A1i%20Ngh%C4%A9a,%20%C4%90i%E1%BB%87n%20Ng%E1%BB%8Dc,%20Ng%C5%A9%20H%C3%A0nh%20S%C6%A1n,%20%C4%90%C3%A0%20N%E1%BA%B5ng%20550000+(IT%20Nexus)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+        >
+        </iframe>
+      </div>
+    </div>
+
+    <footer class="footer_area section_padding_130_0">
+      <div class="container">
+        <div class="row">
+          <!-- Single Widget-->
+          <div class="col-12 col-sm-6 col-lg-6">
+            <div class="single-footer-widget section_padding_0_130">
+              <!-- Footer Logo-->
   
-          <div class="section-header">
-            <h2>Contact</h2>
-            <p>Nulla dolorum nulla nesciunt rerum facere sed ut inventore quam porro nihil id ratione ea sunt quis dolorem dolore earum</p>
-          </div>
-  
-          <div class="row gx-lg-0 gy-4">
-  
-            <div class="col-lg-4">
-  
-              <div class="info-container d-flex flex-column align-items-center justify-content-center">
-                <div class="info-item d-flex">
-                  <i class="bi bi-geo-alt flex-shrink-0"></i>
-                  <div>
-                    <h4>Location:</h4>
-                    <p>A108 Adam Street, New York, NY 535022</p>
-                  </div>
-                </div><!-- End Info Item -->
-  
-                <div class="info-item d-flex">
-                  <i class="bi bi-envelope flex-shrink-0"></i>
-                  <div>
-                    <h4>Email:</h4>
-                    <p>info@example.com</p>
-                  </div>
-                </div><!-- End Info Item -->
-  
-                <div class="info-item d-flex">
-                  <i class="bi bi-phone flex-shrink-0"></i>
-                  <div>
-                    <h4>Call:</h4>
-                    <p>+1 5589 55488 55</p>
-                  </div>
-                </div><!-- End Info Item -->
-  
-                <div class="info-item d-flex">
-                  <i class="bi bi-clock flex-shrink-0"></i>
-                  <div>
-                    <h4>Open Hours:</h4>
-                    <p>Mon-Sat: 11AM - 23PM</p>
-                  </div>
-                </div><!-- End Info Item -->
+              <h5 class="widget-title">Cooking Tutoria</h5>
+              <!-- Copywrite Text-->
+              <div class="copywrite-text mb-5">
+                <p style="margin-left: 10px;">
+                  Cooking Tutoria được tạo nên với mong muốn có thể giúp cho
+                  người nội trợ sẽ dễ dàng hơn trong việc nấu ăn hàng ngày của
+                  mình. Từ công việc chuẩn bị các nguyên liệu, phải chọn món ăn
+                  hàng ngày hoặc lựa chọn những thiết bị dùng bếp sẽ trở nên dễ
+                  dàng hơn.
+                </p>
               </div>
-  
+              <!-- Footer Social Area-->
+              <div class="footer_social_area">
+                <div class="p-3">
+                  <p>&copy; Cooking Tutorial 2024 Thiết Kế web</p>
+                </div>
+              </div>
             </div>
-  
-            <div class="col-lg-8">
-              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                <div class="row">
-                  <div class="col-md-6 form-group">
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                  </div>
-                  <div class="col-md-6 form-group mt-3 mt-md-0">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                  </div>
-                </div>
-                <div class="form-group mt-3">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-                </div>
-                <div class="form-group mt-3">
-                  <textarea class="form-control" name="message" rows="7" placeholder="Message" required></textarea>
-                </div>
-                <div class="my-3">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-                </div>
-                <div class="text-center"><button type="submit">Send Message</button></div>
-              </form>
-            </div><!-- End Contact Form -->
-  
+          </div>
+          <div class="col-12 col-sm-6 col-lg">
+            <div class="single-footer-widget section_padding_0_130">
+              <!-- Widget Title-->
+              <h5 class="widget-title">Tổng quan</h5>
+              <!-- Footer Menu-->
+              <div class="footer_menu">
+                <ul>
+                  <li><a href="../../Home/home.html">Trang chủ</a></li>
+                  <li>
+                    <a href="../../Home/home.html#category-title">Danh mục</a>
+                  </li>
+                  <li><a href="../../sign_in/sign.html">Đăng nhập</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Single Widget-->
+          <div class="col-12 col-sm-6 col-lg">
+            <div class="single-footer-widget section_padding_0_130">
+              <!-- Widget Title-->
+              <h5 class="widget-title">Danh mục</h5>
+              <!-- Footer Menu-->
+              <div class="footer_menu">
+                <ul>
+                  <li>
+                    <a href="../../Home/home.html#Breakfast">Breakfast</a>
+                  </li>
+                  <li><a href="../../Home/home.html#Vegan">Vegan</a></li>
+                  <li><a href="../../Home/home.html#Meat">Meat</a></li>
+                  <li><a href="../../Home/home.html#Dessert">Dessert</a></li>
+                  <li><a href="../../Home/home.html#Lunch">Lunch</a></li>
+                  <li>
+                    <a href="../../Home/home.html#Chocolate">Chocolate</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg">
+            <div class="single-footer-widget section_padding_0_130">
+              <!-- Widget Title-->
+              <h5 class="widget-title">Liên hệ</h5>
+              <!-- Footer Menu-->
+              <div class="footer_menu">
+                <ul>
+                  <li>
+                    <a href="mailto:duynm.23it@vku.udn.vn"
+                      class="fas fa-envelope-open-text">&#160;duynm.23it@vku.udn.vn</a>
+                  </li>
+                  <li>
+                    <a href="https://www.facebook.com/duy.nguyenminh.56679" class="fab fa-facebook">&#160;Nguyễn Minh
+                      Duy</a>
+                  </li>
+                  <li><a href="#" class="fas fa-phone">&#160;0123456789</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
   
+          
         </div>
-      </section><!-- End Contact Section -->
+      </div>
+    </footer>
+    
 
 
     <script src="app.js"></script>
